@@ -2,8 +2,6 @@
 
 namespace App\Models;
 
-use App\Models\Category;
-use App\Models\Product;
 use Illuminate\Contracts\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;

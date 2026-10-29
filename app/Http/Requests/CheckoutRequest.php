@@ -12,11 +12,9 @@ class CheckoutRequest extends FormRequest
     /**
      * Determine if the user is authorized to make this request.
      */
-
-'payment_provider' => ['required', Rule::enum(PaymentProvider::class)],
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -27,7 +25,7 @@ class CheckoutRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'payment_provider' => ['required', Rule::enum(PaymentProvider::class)],
         ];
     }
 }
